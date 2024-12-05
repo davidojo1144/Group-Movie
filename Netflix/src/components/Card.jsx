@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { useNavigate } from "react-router";
-import video from "/videos/trailerVideo.mp4";
+// import video from "/videos/trailerVideo.mp4";
 import styles from "../styles/card.module.css";
 import {IoPlayCircleSharp } from "react-icons/io5";
 import { RiThumbUpFill, RiThumbDownFill } from "react-icons/ri";
@@ -12,7 +12,9 @@ const Card = ({ movieData, isLiked = false }) => {
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
   const handlePlayClick = ()=>{
-    navigate("/player", {state: {videoUrl: movieData.video || video}})
+    navigate("/player")
+
+    // {state: {videoUrl: movieData.video || video}
   }
   return (
     <div

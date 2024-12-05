@@ -51,7 +51,8 @@ h6{
     padding: 0 60px;
 }
 .form{
-    display: grid;
+    place-content: center;
+    /* display: grid; */
     width: 60%;
     margin: 0px 0px 6px 0px;
 }

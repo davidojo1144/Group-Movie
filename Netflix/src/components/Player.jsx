@@ -1,7 +1,7 @@
 import React from "react";
 import { BsArrowLeft } from "react-icons/bs";
 import styles from "../styles/player.module.css";
-import video from "/videos/video.mp4";
+import video from "/images/Netflix.png";
 import { useLocation, useNavigate } from "react-router";
 
 const Player = () => {

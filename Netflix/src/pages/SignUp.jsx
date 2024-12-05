@@ -2,8 +2,8 @@ import { React, useState } from "react";
 import styles from "../styles/signup.module.css";
 import Header from "../components/Header";
 import BackgroundImage from "../components/BackgroundImage";
-import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
-import { firebaseAuth } from "../utils/firebase-config";
+// import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+// import { firebaseAuth } from "../utils/firebase-config";
 import {useNavigate} from "react-router";
 import axios from "axios";
 
@@ -11,13 +11,14 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState({
+    userName: "",
     email: "",
     password: "",
   });
   const handleSignIn = async () => {
     try{
-      const {email, password} = formValues;
-      const  response =await axios.post("http://localhost:8080",{email,password})
+      const {userName, email, password} = formValues;
+      const  response =await axios.post("http://localhost:8080/api/user/register",{userName, email, password})
 
       alert("Sign-up successful!")
       navigate("/login")
@@ -44,6 +45,18 @@ const SignUp = () => {
               showPassword ? "grid--two--columns" : "grid--one-column"
             }`}
           >
+             <input
+              type="name"
+              placeholder="Full Name"
+              name="name"
+              value={formValues.name}
+              onChange={(e) =>
+                setFormValues({
+                  ...formValues,
+                  [e.target.name]: e.target.value,
+                })
+              }
+            />
             <input
               type="email"
               placeholder="Email Address"
