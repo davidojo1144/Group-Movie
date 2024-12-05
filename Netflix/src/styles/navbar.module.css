@@ -1,0 +1,94 @@
+.logo{
+    width: 13rem;
+    height: 13rem;
+    cursor: pointer;
+}
+.scrolled{
+    background-color: black;
+}
+nav{
+    position: sticky;
+    top: 0;
+    height: 6.5rem;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 0 2rem;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+}
+.left{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.1rem;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-wrap:nowrap;
+    font-weight: 440;
+    font-size: large;
+}
+.bakeMistery{
+    margin-right: 20px;
+}
+.bakeMistery a {
+    text-decoration: none;
+    color: white; /* Change this color to whatever you want */
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+.rightFlex{
+    display: flex;
+    gap: 1rem;
+
+}
+.rightFlex button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.rightFlex button:focus{
+    outline: none;
+}
+.rightFlex input{
+    padding: 5px 0px 5px 10px;
+}
+.searchBar svg{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.signOff svg{
+    color: #f34242;
+    font-size: 1.2rem;
+}
+.navBarInput{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+input:focus{
+    outline: none;
+}
+.showSearch{
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.showSearch input{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    padding: 0.3rem;
+}

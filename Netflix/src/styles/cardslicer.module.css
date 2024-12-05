@@ -1,0 +1,49 @@
+.flexColumn {
+  gap: 1rem;
+  position: relative;
+  padding: 2rem 0;
+}
+.flexSlider {
+  display: flex;
+}
+.flexColumn h1 {
+  margin: 0px 0px 0px 50px;
+}
+.flexSlider {
+  width: max-content;
+  gap: 1rem;
+  transform: translateX(0px);
+  transition: 0.3s ease-in-out;
+  margin: 0px 0px 0px 50px;
+}
+.sliderAction {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+.sliderAction svg {
+  font-size: 2rem;
+}
+.none{
+    display: none;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+/* .sliderAction {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+  } */

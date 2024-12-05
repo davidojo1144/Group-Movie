@@ -1,0 +1,23 @@
+.select {
+    background-color: rgba(0,0,0,0.4);
+    color: black;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    padding: 10px 0px 10px ;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+ }
+ .select:focus {
+    outline: none;
+  }
+  .select:hover{
+    color: rgb(56, 54, 54);
+  }
+  .selectWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  

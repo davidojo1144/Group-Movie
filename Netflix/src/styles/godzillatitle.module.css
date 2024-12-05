@@ -1,0 +1,14 @@
+.container{
+    padding: 0px 0px 0px 8px;
+}
+.container h1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.container{
+    text-align:left;
+    width: 26rem;
+    line-height: 1.5;
+    display: block;
+    margin: 0px 0px 25px;
+}

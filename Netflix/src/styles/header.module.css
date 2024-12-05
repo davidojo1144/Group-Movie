@@ -1,0 +1,13 @@
+.headerMainContainer{
+    padding:  0 4rem;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: #1152e8;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.2rem;
+    font-weight: bolder;
+    font-size: 1.05rem;
+}
